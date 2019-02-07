@@ -29,5 +29,14 @@
             }
         }
         
+        stage('Deploy kubernetes'){
+            kubernetesDeploy(
+                kubeconfigId: 'kubeconfig',
+                configs: 'application.yaml',
+                enableConfigSubstitute: false)
+                echo 'App url: http://54.186.233.130:30005'
+            
+        }
+        
     }
 }
