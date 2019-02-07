@@ -10,7 +10,7 @@
       <a href="index.php">Greet someone else</a>
     <? } else { ?>
       <form class="greetingForm" action="index.php" method="post">
-        <label for="who">Say hello to phoenix2.0</label>
+        <label for="who">Say hello to phoenix3.0</label>
         <input type="text" name="who">
         <input type="submit" name="greet" value="Say Hello">
       </form>
