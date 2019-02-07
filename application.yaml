@@ -24,7 +24,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Service
 metadata:
-  name: phoenix
+  name: phoenix-c
   namespace: phoenix
   labels:
     app: phoenix
