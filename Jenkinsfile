@@ -34,7 +34,7 @@
              kubernetesDeploy(
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
-                enableConfigSubstitution: false)
+                enableConfigSubstitution: true)
                 echo 'App url: http://54.186.233.130:30005'
           }
                      
