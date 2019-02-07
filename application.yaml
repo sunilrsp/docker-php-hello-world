@@ -5,6 +5,7 @@ metadata:
   namespace: phoenix
   labels:
     app: phoenix
+    role: rolling-update
 spec:
   replicas: 1
   selector:
@@ -20,6 +21,8 @@ spec:
         image: world2enjoy/phoenix2.0:latest
         ports:
         - containerPort: 80
+    strategy:
+    type: RollingUpdate
 ---
 apiVersion: v1
 kind: Service
