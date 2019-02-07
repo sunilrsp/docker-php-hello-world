@@ -32,7 +32,7 @@
         stage('Deploy kubernetes'){
           
           steps {
-            sh kubectl -f delete application.yaml
+            sh 'kubectl -f delete application.yaml'
              kubernetesDeploy(
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
